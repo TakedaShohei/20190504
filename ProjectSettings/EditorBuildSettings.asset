@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Desktop.unity
+    guid: d8a37d55ab7798044b5883c76648721d
+  - enabled: 1
+    path: Assets/capter4-1.unity
+    guid: 44acc6a341c15c249b11b00bdc961e67
