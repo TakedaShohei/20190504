@@ -57,8 +57,10 @@ public class Test : MonoBehaviour {
         Debug.Log(Square(4));
         Debug.Log(average(4,10));
         Debug.Log(bigger(20,10));
+        Debug.Log(BMI(73, 1.8f));
+        Debug.Log(BMIResult(73, 1.8f));
 
-
+        
 
 
     }
@@ -164,5 +166,49 @@ public class Test : MonoBehaviour {
         {
             return a;
         }
+    }
+
+    float BMI(float kg ,float M)
+    {
+        float c = kg /( M * M);
+
+        return c;
+
+    }
+    string BMIResult(float kg,float M)
+    {
+        float c = BMI(kg, M);
+        string res = "";
+        if (c < 19.8)
+        {
+            res = "やせ型";
+        }
+        else if (c < 24.2)
+        {
+            res = "普通";
+
+        }
+        else if (c < 26.4)
+        {
+            res = "やや肥満（過体重）";
+
+        }
+        else if (c < 35.0)
+        {
+            res = "肥満";
+
+        }
+        else 
+        {
+            res = "高度肥満（要治療）";
+
+        }
+
+        return res;
+
+
+
+
+
     }
 }
